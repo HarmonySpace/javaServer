@@ -9,9 +9,9 @@ public class client {
     public static void main(String[] args) {
         try {
             // a: en local
-            //InetAddress serverIP = InetAddress.getLocalHost();
+            InetAddress serverIP = InetAddress.getLocalHost();
             // a: ip del servidor
-            String serverIP = "192.168.153.130";
+            //String serverIP = "192.168.153.130";
             // a: crear el socket
             Socket socketc = new Socket(serverIP, 5001);
             // a: leer el buffer del servidor
